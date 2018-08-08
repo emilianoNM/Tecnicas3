@@ -15,6 +15,9 @@ enava@asimov.mx
 Tarea 2 
 
 Instalar linux en una usb booteable o en su computadora 
+
+instalar git 
+
 https://www.youtube.com/watch?v=TOG12y1DzZI
 
 instalar sublimetex 
