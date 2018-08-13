@@ -1,10 +1,5 @@
-
-# coding: utf-8
-
 # In[2]:
-
-
-def Menu_Principal():
+def Menu():
     print("1. Suma")
     print("2. Resta")
     print("3. Multiplicacion")
@@ -43,21 +38,8 @@ def Menu_Principal():
             print("Segundo numero a operar")
             b=int(input())
             division=a/b
-            if(division==(a/b)):
-                print("El resultado de la division es:",division)
+            print("El resultado de la division es:",division)
                 Opcion=int(input("Seleccione la operacion que se desea realizar  "))
         elif(Opcion==5):
             return 
-
-
-# In[3]:
-
-
-Menu_Principal()
-
-
-# In[ ]:
-
-
-Menu_Principal()
 
