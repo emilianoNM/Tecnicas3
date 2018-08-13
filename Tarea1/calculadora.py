@@ -1,0 +1,31 @@
+op=int(1)
+numero1=int(1)
+numero2=int(1)
+while op!=  5:
+  print ('Calculadora')
+  print('1. Suma')
+  print('2. Resta')
+  print('3. Multiplicacion')
+  print('4. División')
+  print('5. Salir')
+  op=int(input("elige una opcion"))
+  if op==1:
+    numero1=int(input("Introduce el primer numero"))
+    numero2=int(input("Introduce el segundo numero"))
+    res=int(numero1+numero2)
+    print('El resultado es' ,res)
+  elif op==2:
+    numero1=int(input("Introduce el primer numero"))
+    numero2=int(input("Introduce el segundo numero"))
+    res=int(numero1-numero2)
+    print('El resultado es' ,res)
+  elif op==3:
+    numero1=int(input("Introduce el primer numero"))
+    numero2=int(input("Introduce el segundo numero"))
+    res=int(numero1*numero2)
+    print('El resultado es' ,res)
+  elif op==4:
+    numero1=int(input("Introduce el primer numero"))
+    numero2=int(input("Introduce el segundo numero"))
+    res=float(numero1/numero2)
+    print('El resultado es' ,res)
