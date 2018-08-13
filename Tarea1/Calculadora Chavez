@@ -1,0 +1,30 @@
+print(">>>MENU CALCULADORA<<<")
+print("1 SUMAR DOS NUMEROS")
+print("2 RESTAR DOS NUMEROS")
+print("3 MULTIPLICAR DOS NUMEROS")
+print("4 DIVIDIR DOS NUMEROS")
+print("5 SALIR")
+opcion = int(input("Introduzca opcion 1-5 "))
+if opcion == 1:
+    n1 = float(input("Introduca primer sumando"))
+    n2 = float(input("Introduca segundo sumando"))
+    suma = n1 + n2
+    print n1,n2,suma
+if opcion == 2:
+    n1 = float(input("Introduca minuendo"))
+    n2 = float(input("Introduca sustraendo"))
+    resta = n1 - n2
+    print n1,n2,resta
+if opcion == 3:
+    n1 = float(input("Introduca primer operando"))
+    n2 = float(input("Introduca segundo operando"))
+    multiplicacion = n1 * n2
+    print n1,n2,multiplicacion
+if opcion == 4:
+    n1 = float(input("Introduca dividendo"))
+    n2 = float(input("Introduca divisor"))
+    division = n1 / n2
+    print n1,n2,division
+if opcion == 5:
+    print("Ha elegido salir")
+    
