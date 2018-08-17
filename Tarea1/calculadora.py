@@ -1,31 +1,36 @@
-op=int(1)
-numero1=int(1)
-numero2=int(1)
-while op!=  5:
-  print ('Calculadora')
-  print('1. Suma')
-  print('2. Resta')
-  print('3. Multiplicacion')
-  print('4. División')
-  print('5. Salir')
-  op=int(input("elige una opcion"))
-  if op==1:
-    numero1=int(input("Introduce el primer numero"))
-    numero2=int(input("Introduce el segundo numero"))
-    res=int(numero1+numero2)
-    print('El resultado es' ,res)
-  elif op==2:
-    numero1=int(input("Introduce el primer numero"))
-    numero2=int(input("Introduce el segundo numero"))
-    res=int(numero1-numero2)
-    print('El resultado es' ,res)
-  elif op==3:
-    numero1=int(input("Introduce el primer numero"))
-    numero2=int(input("Introduce el segundo numero"))
-    res=int(numero1*numero2)
-    print('El resultado es' ,res)
-  elif op==4:
-    numero1=int(input("Introduce el primer numero"))
-    numero2=int(input("Introduce el segundo numero"))
-    res=float(numero1/numero2)
-    print('El resultado es' ,res)
+def Menu():
+    """Funcion que Muestra el Menu"""
+    print """************
+Calculadora
+************
+Menu
+1) Suma
+2) Resta
+3) Multiplicacion
+4) Division
+5) Salir"""
+def Calculadora():
+    """Funcion Para Calcular Operaciones Aritmeticas"""
+    print "presione enter cada que seleccione un valor o desee continuar con el proceso"
+    Menu()
+    opc = int(input("Selecione Opcion\n"))
+    while (opc >0 and opc <5):
+        x = int(input("Ingrese Numero\n"))
+        y = int(input("Ingrese Otro Numero\n"))
+        if (opc==1):
+            print "La Suma es:", x+y
+            opc = int(input("Selecione Opcion\n"))
+        elif(opc==2):
+            print "La Resta es:",x-y
+            opc = int(input("Selecione Opcion\n"))
+        elif(opc==3):
+            print "La Multiplicacion es:",x*y
+            opc = int(input("Selecione Opcion\n"))
+        elif(opc==4):
+            try:
+              print "La Division es:", float(x)/y
+              opc = int(input("Selecione Opcion\n"))
+            except ZeroDivisionError:
+              print "No se Permite la Division Entre 0"
+              opc = int(input("Selecione Opcion\n"))
+Calculadora()
