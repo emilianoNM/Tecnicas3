@@ -1,0 +1,2 @@
+p=lambda frase: frase==frase[::-1]
+print p(raw_input('el palindromo es'))
