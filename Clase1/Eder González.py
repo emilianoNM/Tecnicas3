@@ -1,15 +1,3 @@
 
-# coding: utf-8
-
-# In[1]:
-
-
-frase = input('Ingrese una frase:') 
- 
-temp = frase.replace(' ','') 
- 
-if temp == temp[::-1]: 
-    print('La frase es palindromo') 
-else: 
-    print('No es palindromo') 
-
+c= input ("Ingrese ek palindromo que deseas comprobar");
+print(string.replace(' ', ' ')==string.replace(' ', ' ') [1::-1])
