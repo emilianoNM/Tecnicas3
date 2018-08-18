@@ -1,0 +1,7 @@
+pal = input('Ingrese una frase o palabra:')
+p= pal.replace(' ','') 
+a= p[::-1]
+if p==a:
+ print('es palindromo')
+else: 
+ print('no es palindromo')
