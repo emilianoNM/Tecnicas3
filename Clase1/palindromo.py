@@ -1,7 +1,9 @@
-def palindromo(c):
-	d=c.lower().replace(' ','')
-	if d==d[::-1]:
-		print 'true'
-
-c = input('Ingrese una frase: ') 
-palindromo(c)
+def palindromo(frase):
+    tr = str.maketrans("áéíóúüñÁÉÍÓÚÜÑ.,;!¡¿?", "aeiouunAEIOUUN       ")
+    frase = frase.translate(tr)
+    frase = "".join(frase.split())
+    frase =frase.lower()
+    if frase == frase[::-1]:
+      return True
+    else:
+      return False
