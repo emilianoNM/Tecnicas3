@@ -1,0 +1,8 @@
+//Chavez Granados Ej2
+c= (input("Ingrese la palabra que desee"))
+l=(input("elija una letra "))
+conteo = 0
+for l in c:
+    if l==l:
+        conteo += 1
+print ("la letra se repite ",conteo, “veces”) 
