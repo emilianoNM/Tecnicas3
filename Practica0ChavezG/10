@@ -1,0 +1,34 @@
+from sympy import 
+import math
+def funcionVal (f, val):
+    funcion = f
+    fun = vars(math)
+    x = {"x":val}
+    funVal = eval(funcion,fun,x)
+    return funVal
+x = Symbol('x')
+ 
+print(" >> Método de Newton Raphson <<")
+print("Se debe ingresar:")
+print("  Logaritmo natural: log(x)")
+print("  Exponencial: exp(x)")
+funcion = input(“ Dame la función f(x)= ")
+ valorIni = float(input(" Dame el valor inicial X0:"))
+error = float(input(" Dame el error E:"))
+derivada = diff(funcion, x)
+iteraciones = 0
+raizAprox = valorIni
+errorIte = error + 1;
+ 
+while errorIte > error:
+     iteraciones = iteraciones + 1
+     raizAux = raizAprox
+     funAux = funcionVal(funcion, raizAux)
+     devAux = derivada.evalf(subs={x:raizAux}
+     raizAprox = raizAux - (funAux/devAux)
+     errorIte = abs(raizAux - raizAprox)
+     print("  X" + str(iteraciones) + ("\t") + "{0:.6f}\t".format(raizAprox) + ("    ") + "{0:.6f}\t".format(errorIte))
+ 
+print(" La raíz aproximada de f(x) es: {0:.8f}".format(raizAux))
+print(" Con un error de: {0:.8f}".format(errorIte))
+ 
