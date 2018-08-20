@@ -1,0 +1,19 @@
+// Chavez Granados
+P = [(1, 1),(1.8, 1.5),(2, 2.5),(2.5, 2.8),(3, 4),(5,6),(15.3,17.8)]
+x = array([p[0] for p in P]) 
+y = array([p[1] for p in P])
+i=0
+Sumax=Sumay=Sumaxy=Sumaxx=a=b=0
+ 
+while (i<8):
+    print Sumax, Sumay, Sumaxy, Sumaxy
+    Sumax = Sumax + x
+    Sumay = Sumay + y
+    Sumaxy = Sumaxy + (x*y)
+    Sumaxx = Sumaxx + (x*x)
+    i = i + 1
+ 
+print Sumax, Sumay, Sumaxy, Sumaxy
+a = ( (Sumax*Sumay) - (7*Sumaxy) ) / ( (Sumax*Sumax) - (7*Sumaxx) )
+b = ( Sumay - (a*Sumax) ) / 7
+print a,"x +",b
