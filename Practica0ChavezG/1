@@ -1,0 +1,19 @@
+//Chavez Granados Carina Ej 1 
+// En c
+#include <stdio.h>
+int main ( )
+{
+float kelvin;
+float fahrenheit;
+printf (“Introduzca los grados Kelvin”)
+scanf(“%f”, &kelvin);
+fahrenheit = 1,8 x (kelvin - 273) + 32;
+printf( “En grados Fahrenheit seran: %f ”,fahrenheit);
+fflush(stdin);
+getchar( );
+return 1;
+}
+// en PYTHON
+kelvin = float(input(“Introduzca los grados Kelvin”))
+fahrenheit = 1,8 x (kelvin - 273) + 32;
+print (“En grados Fahrenheit seran: ”,fahrenheit)
