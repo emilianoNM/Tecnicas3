@@ -1,0 +1,25 @@
+//Chavez Granados
+//en C
+#include<stdio.h>
+int main( )
+{
+int I;
+float valor,suma;
+suma=0;
+for(I=1;I<=15;I++)
+{
+	valor=1/I+1;
+	suma=suma+valor;
+}
+printf(“La sumatoria es %f”, suma);
+fflush(stdin);
+getchar();
+}
+
+// En Python
+
+I=15
+suma=0
+for i in range(I+1)
+suma+= 1/(I+1)
+print(“La sumatoria es”,suma)
