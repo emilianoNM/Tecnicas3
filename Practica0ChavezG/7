@@ -1,0 +1,21 @@
+//Chavez Granados
+// en C
+include<stdio.h>
+int main( )
+{
+int tiempo;
+float volumen,cambio;
+printf(“ Introduzca el tiempo”);
+scanf(“%d”,&tiempo);
+volumen=60*(30+2*tiempo);
+cambio= (volumen-60)/tiempo;
+printf(“La razón de cambio sera %f”,cambio);
+fflus(stdin);
+getchar();
+}
+
+// en Python
+
+tiempo = float(input(“Introduzcael tiempo”))
+volumen= 60*(30+2*tiempo)
+print (“la razón de cambio sera: ”,(volumen-60)/tiempo)
