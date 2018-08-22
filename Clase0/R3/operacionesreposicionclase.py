@@ -1,3 +1,4 @@
+#karen
 a=int(input("escribe n1:"))
 b=int(input("\nescribe n2:"))
 c=int(input("\nescribe n3:"))
