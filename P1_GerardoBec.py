@@ -1,99 +1,62 @@
+#GerardoBecerra
 
-# coding: utf-8
+class Dron:
+    Tvuelo=10
+    Estructura='plastico'
+    Tipo:'fotografia'
+    Motores= 4
+    Color= 'negro'
+    Tamaño='pequeño'
+    Bateria=100
+            
+    
+    def __init__(self, Tvuelo, Estructura, Tipo):
+        self.Tvuelo=Tvuelo
+        self.Estructura=Estructura
+        self.Tipo=Tipo
+        self.Motores=Motores
+        self.Color=Color
+        
+    
+    def bateriabaja(self):
+        print("La bateria esta baja")
+        self.Motores=self.Motoresbajos
+        print("Motores con el 10% de bateria", self.Motores)
 
-# In[ ]:
+    def niveldebateria(self):
+        if(self.Bateria!=100):
+            print("El nivel de bateria es:")
+            self.Bateria=self.Bateria-50
+        elif(self.Bateria==50):
+            print("La bateria esta a la mitad") 
+        elif(self.Bateria==10):
+            print("Cargar bateria")        
+    
+    def motordañado(self):
+        print("El motor esta dañado")
+        self.Motores=False
+	self.Motores=True 
 
-
-Actividad 1
-
-Dron
-float Peso
-string Color
-int Piezas
-int tamaño
-void Vuelo()
-void Fotografia()
-float getPeso()
-void setPeso()
-string getColor()
-void setColor()
-string getPiezas()
-void setPiezas()
-
-Actividad 2
-Clase Dron
-
-namespace VANT
-{
-    class Dron
-    {
-        private int piezas;
-        private string color;
-        private int tamaño;
-        private float peso;
-
-        public Boolean sinbateria = false;
-        public int Piezas {get => piezas; set => piezas = value;}
-        public string Color {get => color; set => color = value;}
-        public int Peso {get => peso; set => peso = value;}
-        public int Tamaño {get => tamaño; set => tamaño = value;}
-
-        enum TiposDeDrones {Carrera, Fotografia, Riego}
-        public Dron(string color, int peso)
-        {
-           peso = pesoDelDron;
-           tamaño = tamañoDelDron;
-        }
-
-        public Dron()
-        {
-        }
-        public Boolean vuelo(int mint)
-        {
-            int tiempodevuelo = 10;
-            if (mint > tiempodevuelo)
-                return true;
-            else
-                return false;
-        }
-
-        public bool grabar(bool bateriacargada)
-        {
-            if (bateriacargada)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
-        void foto()
-        {
-        }
-        void video()
-        {
-        }
-
-        public bool tipos(int tipoDeDrones)
-        {
-            switch (tipoDeDrones)
-            {
-                case (int)TiposDeDrones.Carrera:
-                    return false;
-                    break;
-                case (int)TiposDeDrones.Fotografia:
-                    return true;
-                    break;
-                case (int)TiposDeDrones.Riego:
-                    return true;
-                    break;
-                default:
-                    return false;
-                    break;
-            }                                  
-        }
-    }
-}
+    def estructura(self):
+        print("La estructura del Dron es de plastico")
+        self.Estructura=False
+	self.Estructura=True                
+        
+    def Tipo(self):
+        print("El dron es de fotografia?")
+        if(self.Tipo=='fotografia'):
+            self.Tipo=True
+        elif(self.Tipo!='carrera'):
+            print("Dron equivocado")
+            self.Tipo=False
+        elif(self.Tipo!='riego'):
+            print("Dron equivocado")
+            self.Tipo=False
+            
+    def info Dron(self):
+        print("Tiempo de Vuelo",self.Tvuelo)
+        print("Tipo de Dron",self.Tipo)
+        print("Nivel de bateria",self.Bateria)
+        print("Numero de motores",self.Motores)
+        print("Estructura del Dron",self.Estructura)
 
