@@ -1,0 +1,2 @@
+ 20 clases con 10 atributos y sus test 
+ 
