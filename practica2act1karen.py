@@ -1,3 +1,5 @@
+#karen
+#practica 2 actividad1
 class Perros(object):
  def __init__(self, raza, color, edad):
         
