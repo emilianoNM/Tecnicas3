@@ -1,6 +1,6 @@
 class Comercio(object):
 	Length=0
-	def __init__(self,nombreProducto,nombreProvedor,nombreComerciante,establecimiento,mediodeDistribucion,numIdenFiscal,sectordeComercio,superficiedeVenta,telefono,telefono):
+	def __init__(self,nombreProducto,nombreProvedor,nombreComerciante,establecimiento,mediodeDistribucion,numIdenFiscal,sectordeComercio,superficiedeVenta,telefono,email):
 		self.nombreProducto= nombreProducto
 		self.nombreProvedor= nombreProvedor
 		self.nombreComerciante = nombreComerciante
