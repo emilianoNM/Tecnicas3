@@ -10,6 +10,6 @@ class ServiciosFinancieros(object):
 		self.sector= sector
 		self.afiliaciones= afiliaciones
 		self.iD= iD
-		self.paginaWeb= telefono
+		self.paginaWeb= paginaWeb
 
 
