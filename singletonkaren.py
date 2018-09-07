@@ -1,3 +1,4 @@
+#karen
 class singleton(object):
 
  def _init_(self, Latitud, Longitud):
