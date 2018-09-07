@@ -1,5 +1,5 @@
-
-num = float(input("Introduce un número: "))
+#karen
+num = float(input("Introduce un nÃºmero: "))
 if num > 0:
     print("Positivo")
 elif num == 0:
