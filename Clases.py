@@ -1,5 +1,112 @@
 
 
+class Empleados(object):
+	
+	def __init__(self, numerodeempleados, nodeempleado, experiencia, salario,posicion,antiguedad,nombre,sexo,idiomashablados,anodeingreso):
+		
+        self.nodeempleado=nodeempleado
+		self.numerodeempleados=numerodeempleados
+		self.posicion=posicion
+		self.experiencia=experiencia
+		self.salario=salario
+		self.antiguedad=antiguedad
+		self.nombre=nombre
+		self.sexo=sexo
+		self.idiomashablados=idiomashablados
+		self.anodeingreso=anodeingreso
+class  Ubicacion(object):
+	
+	def __init__(self, latitud,altitud,coordenadas,cp, ciudad,delegacion,tipozona,calle,numero,estado):
+		
+		self.latitud=latitud
+		self.altitud=altitud
+        self.coordenadas=coordenadas
+		self.cp=cp
+		self.ciudad=ciudad
+		self.delegacion=delegacion
+		self.tipozona=tipozona
+		self.calle=calle
+		self.numero=numero
+		self.estado=estado
+class Razonsocial(object):
+    def __init__(self, ind, sa, sr, scc,sc, eu, sac):
+		self.ind=ind
+		self.sa=sa
+		self.sr=sr
+		self.scc=scc
+		self.sc=sc
+		self.eu=eu
+		self.sac=sac
+class Actividadeconomica(object):
+    def __init__(self, actividad,tipo, servicios, productos):
+		self.actividad=actividad
+		self.tipo=tipo
+		self.servicios=servicios
+		self.productos=productos
+class RedesSociales():
+    
+    def __init__(self, facebook, twitter,snapchat, instagram, paginaweb, linkeldin, correo, youtube, usuarios, seguidores):
+        
+        self.facebook = facebook
+        self.twiter = twiter
+        self.snapchat=snapchat
+        self.instagram = instagram
+        self.paginaweb = paginaweb
+        self.linkeldin = linkeldin
+        self.correo = correo
+        self.youtube = youtube
+        self.usuarios = usuarios
+        self.seguidores = seguidores
+        self.imagenesDeReconocimiento = imagenesDeReocnocimiento
+class Informacion():
+    
+    def __init__(self,nacional,internacional,multinacional, trabajadores, asociaciones, sindicatos, empleo, valoracion, proyectos, calificacion):
+        
+        self.nacional=nacional
+        self.internacional=internacional
+        self.asociaciones = asociaciones
+        self.sindicatos = sindicatos
+        self.empleo = empleo
+        self.valoracion = valoracion
+        self.proyectos = proyectos
+        self.multinacional=multinacional
+        self.trabajadores = trabajadores
+        self.calificacion = calificacion
+
+class movimientos(object):
+    def __init__(self,numventas,inversionistas,transacciones,capital, trabajadores, sucursales,ganancias,perdidas,impuestos,sueldo):
+        self.numventas=numventas
+        self.capital=capital
+        self.trabajadores=trabajadores
+        self.ganancias=ganancias
+        self.perdidas=perdidas
+        self.impuestos=impuestos
+        self.sucursales=sucursales
+        self.transacciones=transacciones
+        self.sueldo=sueldo
+class Relaciones(object):
+    def __init__(self, distribuidores,tiempoexpansion,patentes,clientes, competencias,sucursales, tiempoexpansion,CamaraConsesionario, inversionistas,socios):
+        self.tiempoexpansion=tiempoexpansion
+        self.distribuidores=distribuidores
+        self.inversionistas=inversionistas
+        self.clientes=clientes
+        self.competencias=competencias
+        self.socios=socios
+        self.sucursales=sucursales
+        self.CamaraConsesionario=CamaraConsesionario
+        self.patentes=patentes
+class confianza(object):
+    def _init_(self,certificaciones,seguro,hacienda,licitaciones,legislaciones,foda,registro,identificacion,valor,evaluacion)
+    self.certificaciones=certificaciones
+    self.seguro=seguro
+    self.hacienda=hacienda
+    self.licitaciones=licitaciones
+    self.legislaciones=legislaciones
+    self.foda=foda
+    self.registro=registro
+    self.identificacion=identificacion
+    self.valor=valor
+    self.evaluacion=evaluacion
 
 
 class Agricultura(object):
@@ -14,15 +121,29 @@ class Agricultura(object):
             self.aide=aide
             self.acd=acd
             self.anumempleados=anumempleados
+class deporteycultura(object):
+         def _init_(dcnombre,dcide,dcactividades,dcpeventos,dctelefono,dcciudad,dcnumempleados,dcactividad,dcasociaciones,dcvoluntarios,dcfechaincorporacion):
+        self.dcnombre=dcnombre
+        self.dcide=dcide
+        self.dcactividades=dcactividades
+        self.dceventos=dceventos
+        self.dctelefono=dctelefono
+        self.dcciudad=dcciudad
+        self.dcnumempleados=dcnumempleados
+        self.dcactividad=dcactividad
+        self.dcasociones=dcasociaciones
+        self.dcvoluntarios=dcvoluntarioz
+        self.dcfechaincorporacion=dcfechaincorporacion
+        
             
 class Mineria(object):
-    def _init_(mnombre,mide,mcorreoe,mpaginainternet,mtelefono,mciudad,mnumempleados,mactividad,mtipounidadeconomica,mfechaincorporacion):
+    def _init_(mnombre,mide,mcorreoe,mmetales,mtelefono,mzona,mnumempleados,mactividad,mtipounidadeconomica,mfechaincorporacion):
         self.mnombre=mnombre
         self.mide=mide
         self.mcorreoe=mcorreoe
-        self.mpaginadeinternet=mpaginadeinternet
+        self.mmetales=mmetales
         self.mtelefono=mtelefono
-        self.mciudad=mciudad
+        self.mzona=mzona
         self.mnumempleados=mnumempleados
         self.mactividad=mactividad
         self.mtipounidadeconomica=mtipounidadeconomica
@@ -70,10 +191,12 @@ class corporativos(object):
         
         
 class serviciosdesalud(object):
-        def _init_(ssnombre,sside,sscorreoe,sspaginainternet,sstelefono,ssciudad,ssnumempleados,ssactividad,sstipounidadeconomica,ssfechaincorporacion):
+        def _init_(ssnombre,sside,sstipo,sspaginainternet,sscertificaciones,anoexperiencia,sstelefono,ssciudad,ssnumempleados,ssactividad,sstipounidadeconomica,ssfechaincorporacion):
         self.ssnombre=ssnombre
         self.sside=sside
-        self.sscorreoe=sscorreoe
+        self.sstipo=sstipo
+        self.sscertificaciones=sscertificaciones
+        self.anoexperiencia=anoexperiencia
         self.sspaginadeinternet=sspaginadeinternet
         self.sstelefono=sstelefono
         self.ssciudad=ssciudad
@@ -84,10 +207,12 @@ class serviciosdesalud(object):
         
 
 class transporte(object):
-        def _init_(ttnombre,ttide,ttcorreoe,ttpaginainternet,tttelefono,ttciudad,ttnumempleados,ttactividad,tttipounidadeconomica,ttfechaincorporacion):
+        def _init_(ttnombre,ttide,ttamano,ttipo,ttzona,ttpaginainternet,tttelefono,ttciudad,ttnumempleados,ttactividad,tttipounidadeconomica,ttfechaincorporacion):
         self.ttnombre=ttnombre
         self.ttide=ttide
-        self.ttcorreoe=ttcorreoe
+        self.ttamano=ttamano
+        self.ttipo=ttipo
+        self.ttzona=ttzona
         self.ttpaginadeinternet=ttpaginadeinternet
         self.tttelefono=tttelefono
         self.ttciudad=ttciudad
@@ -107,19 +232,6 @@ class educacion(object):
         self.eactividad=eactividad
         self.etipounidadeconomica=etipounidadeconomica
         self.efechaincorporacion=efechaincorporacion
-class deporteycultura(object):
-         def _init_(dcnombre,dcide,dccorreoe,dcpaginainternet,dctelefono,dcciudad,dcnumempleados,dcactividad,dctipounidadeconomica,dcfechaincorporacion):
-        self.dcnombre=dcnombre
-        self.dcide=dcide
-        self.dccorreoe=dccorreoe
-        self.dcpaginadeinternet=dcpaginadeinternet
-        self.dctelefono=dctelefono
-        self.dcciudad=dcciudad
-        self.dcnumempleados=dcnumempleados
-        self.dcactividad=dcactividad
-        self.dctipounidadeconomica=dctipounidadeconomica
-        self.dcfechaincorporacion=dcfechaincorporacion
-        
 class inmobiliario(object):
         def _init_(inombre,iide,icorreoe,ipaginainternet,itelefono,iciudad,inumempleados,iactividad,itipounidadeconomica,ifechaincorporacion):
         self.inombre=inombre
@@ -132,7 +244,6 @@ class inmobiliario(object):
         self.iactividad=iactividad
         self.itipounidadeconomica=itipounidadeconomica
         self.ifechaincorporacion=ifechaincorporacion
-#11
 class generaciontransmicion(object):
         def _init_(gnombre,gide,gcorreoe,gpaginainternet,gtelefono,gciudad,gnumempleados,gactividad,gtipounidadeconomica,gfechaincorporacion): 
         self.gnombre=gnombre
@@ -147,13 +258,14 @@ class generaciontransmicion(object):
         self.gfechaincorporacion=gfechaincorporacion
 
 class industriasmanufactureras(object):
-        def _init_(imnombre,imide,imcorreoe,impaginainternet,imtelefono,imciudad,imnumempleados,imactividad,imtipounidadeconomica,imfechaincorporacion): 
+        def _init_(imnombre,imide,proovedores,immateriales,imindustrias,imtipo,imciudad,imnumempleados,imactividad,imtipounidadeconomica,imfechaincorporacion): 
         self.imnombre=imnombre
         self.imide=imide
-        self.imcorreoe=imcorreoe
-        self.impaginadeinternet=impaginadeinternet
-        self.imtelefono=imtelefono
+        self.improovedores=improovedores
+        self.immateriales=immateriales
+        self.imindustrias=imindustrias
         self.imciudad=imciudad
+        self.imtipo=imtipo
         self.imnumempleados=imnumempleados
         self.imactividad=imactividad
         self.imtipounidadeconomica=imtipounidadeconomica
