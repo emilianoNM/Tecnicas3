@@ -1,0 +1,30 @@
+print " Linares Alonso Joshua A."
+
+print "impresion de una flecha hacia la izquierda"
+m=5
+n=9
+for i in range(1,m+1):
+  if(i==1 or i==5):
+     for j in range(1,n+1):
+       if(j==3):
+         print "*",
+       else:
+        print " ",
+
+  if(i==2 or i==4):
+    for j in range(1,n+1):
+       if(j==2 or j==3):
+           print "*",   
+       else:
+             print " ",   
+
+  if(i==3):
+    for j in range(1,n+1):
+           print "*",   
+
+  
+  print (" ")
+
+           
+
+
