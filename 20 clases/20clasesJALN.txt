@@ -1,0 +1,130 @@
+class Empresa(object):
+    def _init_(self,nombre,dueño,lugar)
+        self.nombre= nombre
+        self.dueño= dueño
+        self.lugar= lugar
+
+class datos(object):
+    def _init_(self,nombre,telefono,direccion,correo,pagina)
+        self.nombre=nombre
+        self.telefono=telefono
+        self.direccion=direccion
+        self.correoelectronico=correo
+        self.paginaInternet=pagina
+
+class empleados(object):
+    def _init_(self,total,empleados)
+        self.total=total
+        self.empleados=empleados
+
+class servicio(object):
+    def _init_(self,servicio,costo)
+        self.servicio=servicio
+        self.costo=costo
+class pago(object):
+    def _init_(self,efectivo,cuenta,descuentos)
+        self.efectivo=efectivo
+        self.cuenta=cuenta
+        self.deducible=deducible
+
+class objeto(object):
+    def _init_(self,calidad,cantidad,garantia)
+        self.calidad=calidad
+        self.cantidad=cantidad
+        self.garaantia=garantia
+
+class clientes(object):
+    def _init_(self,privados, publicos)
+        self.privados=privados
+        self.publicos=publicos
+
+class transporte(object):
+    def _init_(self,maritimos,terrestres,aereos)
+        self.aereos=aereos
+        self.terrestres=terrestres
+        self.maritimos=maritimos
+
+class venta(object):
+    def _init_(self,mayoreo,menudeo)
+        self.mayoreo=mayoreo
+        self.menudeo=menudeo
+
+class periodo(object):
+    def _init_(self,tiempo,inicioanual,receso,fin)
+        self.tiempo=tiempo
+        self.inicioanual=inicioanual
+        self.receso=receso
+        self.fin=fin
+
+class distribuidores(object):
+    def _init_(self,lote,origen,desitino,transporte,tiempo)
+        self.lote=lote
+        self.origen=origen
+        self.destino=destino
+        self.transporte=transporte
+        self.tiempo=tiempo
+
+class acionistas(object):
+    def _init_(self,numerodeacciones,numerodeaccionistas,porcentajes)
+        self.numerodeacciones=numerodeacciones
+        self.numerodeaccionistas=numerodeaccionistas
+        self.porcentajes=porcentajes
+
+class sucursales(object):
+    def _init_(self,sede,numerodepaises,tipodecambio,numerodesucursales)
+        self.sede=sede
+        self.numerodepaises=numerodepaises
+        self.tipodecambio=tipodecambio
+        self.numerodesucursales=numerodesucursales
+
+class empresasrelacionadas(object):
+        def _init_(self,nombreempresa,tipoderelacion,porcentajedenecesidad)
+            self.nombreempresa=nombreempresa
+            self.tipoderelacion=tipoderelacion
+            self.porcentajedenecesidad=porcentajedenecesidad
+
+class marketing(object):
+    def _init_(self,mediosUso,costo,eficiencia,balanceEconomico)
+        self.mediosUso=mediosUso
+        self.costo=costo
+        self.eficiencia=eficiencia
+        self.balanceEconomico=balanceEconomico
+
+class posiciones(object):
+    def _init_(self,puesto,salario,prestaciones,vacaciones,bono,requisitos)
+        self.puesto=puesto
+        self.salario=salario
+        self.prestaciones=prestaciones
+        self.vacaciones=vacaciones
+        self.bono=bono
+        self.requisitos=requisitos
+
+class forbes(object):
+    def _init_(self,numeroestatal,numeroacional,numerocontinente,numeromundo)
+        self.numeromundo=numeromundo
+        self.numerocontinente=numerocontinente
+        self.numeroacional=numeroacional
+        self.numeroestatal=numeroestatal
+
+class departamentos(object):
+    def _init_(self,ventas, finanzas, logistica, administracion, produccion, mercadotecnia, recursosHumanos)
+        self.ventas=ventas
+	self.finanzas=finanzas
+	self.logistica=logistica
+	self.administracion=administracion
+	self.produccion=produccion
+	self.mercadotecnia=mercadotecnia
+	self.recursosHumanos=recursosHumanos
+
+class redessociales(object):
+    def _init_(self,facebook,twitter, instagram)
+        self.facebook=facebook
+        self.twitter=twitter
+        self.instagram=instagram
+        
+class bases(object):
+    def _init_(self,mision,vision,lema,logo)
+        self.mision=mision
+        self.vision=vision
+        self.lema=lema
+        self.logo=logo
