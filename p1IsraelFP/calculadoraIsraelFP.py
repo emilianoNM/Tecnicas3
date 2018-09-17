@@ -1,0 +1,46 @@
+# -*- coding: utf-8 -*-
+"""
+This is a temporary script file.
+By: Israel Fabela Perez
+"""
+
+#Funciones
+def menu():
+    print("\n\t\t..:Calculadora:..\n\t1)Suma\n\t2)Resta\n\t3)Division\n\t4)Multiplicación\n\t5)Salir")
+
+#Calculadora
+while True: #Mientras la funcion sea verdadero
+    menu()
+    opcMenu=int(input("Selecciona una opcion: "))
+    if(opcMenu==1):
+        print ">Suma:\n\tIngrese sus dos numeros: A + B"
+        a = int (input("Valor 'A': "))
+        b = int (input("Valor 'B': "))
+        R = a + b
+        print "Resultado: A + B = ", R
+    elif(opcMenu==2):
+        print ">REsta:\n\tIngrese sus dos numeros: A - B)"
+        a = int (input("Valor 'A': "))
+        b = int (input("Valor 'B': "))
+        R = a - b
+        print "Resultado: A - B = ", R
+    elif(opcMenu==3):
+        print ">Division:\n\tIngrese sus dos numeros: A / B"
+        a = float (input("Valor 'A': "))
+        b = float (input("Valor 'B': "))
+        if(b==0):
+            print "Error ... Numero indefinido, vuelve a ingresar otro valor diferente de 0 (cero)"
+        else:
+            R = a / b
+            print "Resultado: A / B = ", R
+    elif(opcMenu==4):
+        print ">Multiplicacion:\n\tIngrese sus dos numeros: A * B)"
+        a = int (input("Valor 'A': "))
+        b = int (input("Valor 'B': "))
+        R = a * b
+        print "Resultado: A * B = ", R
+    elif(opcMenu==5):
+        break
+    else:
+        print("\n Error, ingresa un numero de las opciones")
+    
