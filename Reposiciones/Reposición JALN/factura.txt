@@ -1,0 +1,16 @@
+#Factura
+def factura():
+	print "="*30
+	precio = float(input("Ingrese el valor neto: "))
+	iva = precio * 0.12
+	print "="*30
+	print precio
+	print "+"
+	print iva
+	print "-"*10
+	total = precio + iva
+	print total
+	print "="*30
+	print "El precio total a pagar por la factura es %f"%total
+
+factura()
