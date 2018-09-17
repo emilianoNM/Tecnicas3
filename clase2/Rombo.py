@@ -1,9 +1,19 @@
+#Rombo
+#funcion que muestra la figura de un rombo
 
-ancho = int(input("Ancho: "))
-
-for x in range(1, ancho+1):
-	print " "*(ancho - (x/2))+"*"*x
-for y in range (ancho-1, 0, -1):
-	print " "*(ancho - (y/2))+"*"*y
-
-
+    def imprimirRombo(n):
+    n = n//2
+    for i in range(n,0,-1):
+        for j in range(n,(n-(i+1)),-1):
+            print '',
+        for k in range(i+1,n+1):
+            print '*',
+        print
+    for i in range(0,n):
+        for j in range(n,(n-(i+1)),-1):
+            print '',
+        for k in range(i+1,n+1):
+            print '*',
+        print 
+ 
+imprimirRombo(10)
